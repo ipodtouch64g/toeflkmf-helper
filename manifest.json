@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+
+    "name": "托福考滿分小幫手",
+    "version": "0.0.1",
+    "description": "讓你不在被擋!",
+    "icons": {
+        "48": "imgs/64.png",
+        "128": "imgs/128.png"
+    },
+    "browser_action": {
+        "default_icon": "imgs/64.png",     // 可選
+        "default_title": "托福考滿分小幫手" // 可選
+    },
+    "commands": {
+        "hello": {
+            "description": "hello"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://toefl.kmf.com/*"
+            ],
+            "all_frames": true,
+			"css": ["88.css"]
+        }
+    ],
+    "permissions": [
+          "tabs"
+        ]
+}
