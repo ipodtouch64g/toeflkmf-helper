@@ -26,6 +26,7 @@
 			"css": ["88.css"]
         }
     ],
+	"update_url": "https://github.com/ipodtouch64g/toeflkmf-helper",
     "permissions": [
           "tabs"
         ]
